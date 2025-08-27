@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build My Business - Consultancy for Student Entrepreneurs</title>
+    <meta name="description"
+        content="Launch your student startup with expert guidance. We provide tailored consultancy services to help student entrepreneurs succeed.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Build My Business - Consultancy for Student Entrepreneurs">
+    <meta property="og:description"
+        content="Launch your student startup with expert guidance. We provide tailored consultancy services to help student entrepreneurs succeed.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1647973035166-2abf410c68b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxidWlsZCUyMG15JTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc1NjI0MzQ1OHww&ixlib=rb-4.1.0&q=80&w=1080">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Build My Business - Consultancy for Student Entrepreneurs">
+    <meta property="twitter:description"
+        content="Launch your student startup with expert guidance. We provide tailored consultancy services to help student entrepreneurs succeed.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1647973035166-2abf410c68b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxidWlsZCUyMG15JTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc1NjI0MzQ1OHww&ixlib=rb-4.1.0&q=80&w=1080">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#6366F1',
+                        'secondary': '#A855F7',
+                        'accent': '#38BDF8',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- JSON-LD schema for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Build My Business",
+            "description": "Expert consultancy for student entrepreneurs. We help you build and scale your business.",
+            "url": "https://www.example.com",
+            "logo": "https://res.cloudinary.com/drknkcjgh/image/upload/v1756243436/devmarket/logos/tmj4r6tignajslxrbgep.jpg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-555-123-4567",
+                "contactType": "customer service"
+            },
+            "sameAs": [
+                "https://www.facebook.com/yourcompany",
+                "https://www.twitter.com/yourcompany",
+                "https://www.linkedin.com/company/yourcompany"
+            ]
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigation -->
+    <header role="banner" class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/" aria-label="Build My Business">
+                    <img src="https://res.cloudinary.com/drknkcjgh/image/upload/v1756243436/devmarket/logos/tmj4r6tignajslxrbgep.jpg"
+                        alt="Build My Business Logo" class="h-10 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#features" class="hover:text-primary transition-colors duration-300">Features</a>
+                    <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                <a href="#" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300">Get Started</a>
+                <button class="md:hidden text-gray-500 focus:outline-none focus:text-primary" aria-label="Open Menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section role="region" aria-label="Hero Section"
+        class="relative py-24 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1647973035166-2abf410c68b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxidWlsZCUyMG15JTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc1NjI0MzQ1OHww&ixlib=rb-4.1.0&q=80&w=1080')">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center text-white">
+             <img src="https://res.cloudinary.com/drknkcjgh/image/upload/v1756243436/devmarket/logos/tmj4r6tignajslxrbgep.jpg"
+                        alt="Build My Business Logo" class="h-10 w-auto mx-auto mb-4">
+            <h1 class="text-4xl font-bold mb-6">Empowering Student Entrepreneurs</h1>
+            <p class="text-xl mb-8">Turn your academic ideas into thriving businesses. We provide expert guidance tailored
+                for student startups.</p>
+            <a href="#" class="bg-primary text-white px-6 py-3 rounded-md text-lg hover:bg-secondary transition-colors duration-300">Get Started Today</a>
+            <p class="mt-4 text-sm">Image by <a href="https://unsplash.com/@teslariu?utm_source=unsplash&utm_medium=referral" class="underline">Teslariu Mihai</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral" class="underline">Unsplash</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Social Proof Badges -->
+    <section role="region" aria-label="Social Proof" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-semibold mb-4">Trusted By Students From Leading Universities</h2>
+            <div class="flex items-center justify-center space-x-8">
+                <img src="https://via.placeholder.com/80x80" alt="University Logo 1" class="h-12 w-auto">
+                <img src="https://via.placeholder.com/80x80" alt="University Logo 2" class="h-12 w-auto">
+                <img src="https://via.placeholder.com/80x80" alt="University Logo 3" class="h-12 w-auto">
+                <img src="https://via.placeholder.com/80x80" alt="University Logo 4" class="h-12 w-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section role="region" aria-labelledby="features-heading" id="features" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 id="features-heading" class="text-3xl font-bold text-center mb-12">Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1645397925426-cf18e08fc019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwyfHxidWlsZCUyMG15JTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc1NjI0MzQ1OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Open Business Hours Sign" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Startup Strategy</h3>
+                        <p class="text-gray-700">Develop a winning business plan tailored to the student environment. From ideation to execution, we've got you covered.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MXwxfHNlYXJjaHwxfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MjM5MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="White Monitor on Desk" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Financial Planning</h3>
+                        <p class="text-gray-700">Master your finances with our expert guidance. Learn budgeting, fundraising, and investment strategies specific to student startups.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwyfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MjM5MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Person Sitting at a Table with a Laptop" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Marketing & Branding</h3>
+                        <p class="text-gray-700">Craft a compelling brand and reach your target audience. We offer marketing strategies that resonate with students and beyond.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section role="region" aria-label="Benefits" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Benefits of Our Consultancy</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Tailored Guidance</h3>
+                    <p class="text-gray-700">We understand the unique challenges faced by student entrepreneurs. Our advice is customized to your specific situation.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Expert Mentorship</h3>
+                    <p class="text-gray-700">Get access to experienced mentors who have successfully launched and scaled businesses. Learn from their expertise and avoid common pitfalls.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Networking Opportunities</h3>
+                    <p class="text-gray-700">Connect with fellow student entrepreneurs, investors, and industry leaders. Expand your network and unlock new opportunities.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Practical Skills</h3>
+                    <p class="text-gray-700">Develop essential business skills such as financial management, marketing, and leadership. Equip yourself for long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use-Case Cards -->
+    <section role="region" aria-label="Use Cases" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Real-World Use Cases</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Use Case 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tech Startup</h3>
+                        <p class="text-gray-700">We helped a group of engineering students launch a successful mobile app by providing strategic guidance on product development and marketing.</p>
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Social Enterprise</h3>
+                        <p class="text-gray-700">We assisted a team of social science students in building a sustainable social enterprise by offering expertise in fundraising and community engagement.</p>
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Business</h3>
+                        <p class="text-gray-700">We supported a group of business students in launching a thriving e-commerce store by providing guidance on supply chain management and online marketing.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider (Static HTML) -->
+    <section role="region" aria-labelledby="testimonials-heading" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 id="testimonials-heading" class="text-3xl font-bold text-center mb-8">What Our Students Say</h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">"Build My Business provided invaluable guidance and support throughout my entrepreneurial journey. I couldn't have done it without them!"</p>
+                    <div class="flex items-center">
+                      <img src="https://via.placeholder.com/40x40" alt="John Doe" class="rounded-full mr-3">
+                      <div>
+                        <p class="font-semibold">John Doe</p>
+                        <p class="text-sm text-gray-500">CEO, Example Company</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">"The mentorship I received from Build My Business was exceptional. They helped me overcome challenges and scale my startup effectively."</p>
+                    <div class="flex items-center">
+                      <img src="https://via.placeholder.com/40x40" alt="Jane Smith" class="rounded-full mr-3">
+                      <div>
+                        <p class="font-semibold">Jane Smith</p>
+                        <p class="text-sm text-gray-500">Founder, Innovate Solutions</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">"Thanks to Build My Business, I was able to secure funding and launch my dream business while still in college. Highly recommend!"</p>
+                    <div class="flex items-center">
+                      <img src="https://via.placeholder.com/40x40" alt="Peter Jones" class="rounded-full mr-3">
+                      <div>
+                        <p class="font-semibold">Peter Jones</p>
+                        <p class="text-sm text-gray-500">Student Entrepreneur</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing (Conditional - Since IndustryType.SAAS)-->
+     <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Choose Your Plan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border rounded-lg p-8 ">
+                    <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                    <div class="text-3xl font-bold mb-6">$49<span class="text-gray-500 text-base">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Limited Access to Resources</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Email Support</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Basic Templates</li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition">Choose Plan</button>
+                </div>
+                <div class="border rounded-lg p-8 border-primary relative">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">Most Popular</div>
+                    <h3 class="text-xl font-semibold mb-4">Standard</h3>
+                    <div class="text-3xl font-bold mb-6">$99<span class="text-gray-500 text-base">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Full Access to Resources</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Priority Email Support</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Advanced Templates</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>One-on-One Consulting (1 hr/month)</li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition">Choose Plan</button>
+                </div>
+                <div class="border rounded-lg p-8 ">
+                    <h3 class="text-xl font-semibold mb-4">Premium</h3>
+                    <div class="text-3xl font-bold mb-6">$199<span class="text-gray-500 text-base">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Unlimited Access to Resources</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>24/7 Priority Support</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Custom Templates</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>One-on-One Consulting (4 hr/month)</li>
+                        <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>Access to Exclusive Workshops</li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section role="region" aria-label="Frequently Asked Questions" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold focus:outline-none focus:bg-gray-100 hover:bg-gray-100 transition-colors duration-300"
+                        aria-expanded="false" aria-controls="faq-answer-1">
+                        What types of startups do you work with?
+                    </button>
+                    <div id="faq-answer-1" class="px-6 py-4 hidden">
+                        We work with a wide range of startups across various industries, including technology, social enterprise, e-commerce, and more.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold focus:outline-none focus:bg-gray-100 hover:bg-gray-100 transition-colors duration-300"
+                        aria-expanded="false" aria-controls="faq-answer-2">
+                        How much does your consultancy cost?
+                    </button>
+                    <div id="faq-answer-2" class="px-6 py-4 hidden">
+                        Our consultancy fees vary depending on the scope and duration of the project. Contact us for a personalized quote.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left px-6 py-4 font-semibold focus:outline-none focus:bg-gray-100 hover:bg-gray-100 transition-colors duration-300"
+                        aria-expanded="false" aria-controls="faq-answer-3">
+                        How do I get started?
+                    </button>
+                    <div id="faq-answer-3" class="px-6 py-4 hidden">
+                        Simply reach out to us through our contact form or schedule a free consultation to discuss your needs.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section role="region" aria-labelledby="about-heading" id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 id="about-heading" class="text-3xl font-bold text-center mb-12">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MXwxfHNlYXJjaHwxfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MTgwNjU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Woman Holding Magnetic Card" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                <div>
+                    <p class="text-gray-700 mb-4">We are a team of experienced entrepreneurs and educators passionate about empowering
+                        student startups. We believe that students have the potential to create innovative businesses that
+                        make a positive impact on the world.</p>
+                    <p class="text-gray-700">Our mission is to provide student entrepreneurs with the resources, mentorship, and
+                        network they need to succeed. We are committed to helping you turn your academic ideas into thriving
+                        businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+   <div class="py-16 bg-primary">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Launch Your Student Startup?</h2>
+            <p class="text-xl text-blue-100 mb-8">Get expert guidance and support to turn your academic ideas into a thriving business.</p>
+            <a href="#" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition-colors">Schedule a Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section role="region" aria-labelledby="contact-heading" id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 id="contact-heading" class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxvZmZpY2V8ZW58MXwwfHx8MTc1NjE4MTAxNXww&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Turned off Laptop Computer on Top of Brown Wooden Table" class="w-full h-64 object-cover rounded-lg">
+                </div>
+                 <div class="py-16 bg-white">
+                    <div class='max-w-2xl mx-auto px-6'>
+                        <p class="text-gray-700 mb-4"> Have questions? Feel free to reach out to us through the contact form below.</p>
+                       <form class='space-y-6'>
+                            <div>
+                                <label class='block text-sm font-medium text-gray-700 mb-2' for="name">Name</label>
+                                <input type='text' id="name" class
