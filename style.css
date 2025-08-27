@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6366F1; /* Indigo-500 from Tailwind */
+  --primary-color-light: #A5B4FC; /* Indigo-300 */
+  --primary-color-dark: #4F46E5; /* Indigo-700 */
+  --secondary-color: #34D399; /* Emerald-400 */
+  --secondary-color-light: #6EE7B7; /* Emerald-300 */
+  --secondary-color-dark: #10B981; /* Emerald-700 */
+  --transition-duration: 0.2s;
+}
+
+/* Typography and Spacing */
+body {
+  @apply font-sans antialiased;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 { @apply text-4xl; }
+h2 { @apply text-3xl; }
+h3 { @apply text-2xl; }
+h4 { @apply text-xl; }
+h5 { @apply text-lg; }
+h6 { @apply text-base; }
+
+p {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+/* Utility Classes */
+.section {
+  @apply py-16 px-6;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.badge {
+  @apply inline-block py-1 px-2 rounded-full text-xs font-semibold;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply bg-primary-color hover:bg-primary-color-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-300;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.btn-secondary {
+  @apply bg-secondary-color hover:bg-secondary-color-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-300;
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+
+/* Testimonial Slider */
+.testimonial-slider {
+  @apply relative overflow-hidden;
+}
+
+.testimonial-slide {
+  @apply absolute w-full h-full transition-transform duration-500 ease-in-out;
+}
+
+.testimonial-slide:first-child {
+    @apply relative;
+}
+
+/* FAQ Accordion */
+.faq-item {
+  @apply border border-gray-200 rounded-md mb-2;
+}
+
+.faq-question {
+  @apply flex items-center justify-between py-3 px-4 cursor-pointer;
+}
+
+.faq-question h3 {
+  @apply font-semibold;
+}
+
+.faq-answer {
+  @apply py-3 px-4;
+  display: none;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-question svg {
+  transform: rotate(180deg);
+}
+
+/* Hero Background Image with Overlay */
+.hero {
+  @apply relative bg-cover bg-center py-24;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity as needed */
+}
+
+.hero-content {
+  @apply relative z-10 text-center text-white;
+}
+
+/* Image Attribution */
+.image-attribution {
+  @apply text-xs text-gray-500 mt-1;
+}
+
+/* Feature Image Hover */
+.feature-image-container {
+  @apply relative overflow-hidden;
+}
+
+.feature-image-container img {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.feature-image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Images */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Image Loading States */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.aspect-ratio-container.aspect-w-16\/9 {
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
